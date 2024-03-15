@@ -330,6 +330,99 @@ img {
   display: flex;
   gap: 3rem;
 }
+/* OFFER */
+.offer{
+  max-width: 500rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  height:100vh;
+}
+.offer_text{
+  max-width:30vw;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  transition: 0.5s ease;
+
+}
+.offer_text h2{
+  font-size:5rem;
+  color: var(--primary);
+  font-weight:600;
+}
+.offer_text p{
+  color:var(--dark);
+  font-size:1.5rem;
+  font-weight:500;
+}
+.offer_text a{
+  background:var(--primary);
+  position:relative
+  display:inline-block;
+  padding:1rem 2rem;
+  align-item: center;
+  gap:5rem;
+  color: var(--light);
+  border-radius:5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  width:fit-content;
+}
+.offer_text:hover a {
+  /* zooming of button */
+  scale: 1.1;
+  transition: 0.5s ease;
+}
+.offer_price{
+  text-align:column;
+  width: fit-content;
+  padding: 2.5rem 4rem;
+  position:absolute;
+  right: 0;
+}
+.offer_price h3{
+  display:block;
+  color:yellow;
+  font-size:4rem;
+}
+.offer_price_bot h4{
+  display:block;
+  color:blue;
+  font-size:4rem;
+}
+.offer_price_bot h3{
+  display:block;
+  color:yellow;
+  font-size:3rem;
+}
+.offer_cents h4{
+  display:block;
+  color:blue;
+  font-size:14rem;
+}
+.offer_cents h2{
+  display:block;
+  color:blue;
+  font-size:8rem
+}
+@media screen and (max-width: 500px) {
+  .offer_text{
+    max-width:100vw;
+  }
+  .offer_text h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .offer_text p {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .offer_text a {
+    justify-content: center;
+
+}
+}
 /* pagcecenter ng lahat ng elements sa mobile */
 @media screen and (max-width: 500px) {
   .banner_text h1 {
